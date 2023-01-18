@@ -1,5 +1,7 @@
+import { SectionStyled } from "components/Section/Section.styled";
+
 export const Notification = ({ message }) => (
   <>
-    <p>{message}</p>
+    <SectionStyled>{message}</SectionStyled>
   </>
 );

@@ -1,13 +1,15 @@
+import { Button, ButtonList } from './Feedback.style'
+
 export const FeedbackOptions = p => (
-  <>
-    <button onClick={p.onLeaveFeedback(p.options.good)} type="button">
+  <ButtonList>
+    <Button onClick={p.onLeaveFeedback(p.options.good)} type="button">
       good
-    </button>
-    <button onClick={p.onLeaveFeedback(p.options.neutral)} type="button">
+    </Button>
+    <Button onClick={p.onLeaveFeedback(p.options.neutral)} type="button">
       neutral
-    </button>
-    <button onClick={p.onLeaveFeedback(p.options.bad)} type="button">
+    </Button>
+    <Button onClick={p.onLeaveFeedback(p.options.bad)} type="button">
       bad
-    </button>
-  </>
+    </Button>
+  </ButtonList>
 );
